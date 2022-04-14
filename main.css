@@ -1,0 +1,220 @@
+/* COMMON */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAE8FE;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+/* LEFT SIDE */
+.main {
+  display: block;
+  width: 753px;
+  /* height: 545px; */
+  margin: 0 auto;
+  background-color: skyblue;
+}
+
+.main .left {
+  float: left;
+  width: 360px;
+  height: 545px;
+  margin-right: 28px;
+  padding: 31px 20px 28px;
+  background-color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.main .left section {
+  display: inline-block;
+  text-align: center;
+}
+
+.main .left .colaName {
+  font-size: 9px;
+  margin: 4px 0;
+}
+
+.main .left .colaBtn {
+  width: 70px;
+  height: 22px;
+  vertical-align: middle;
+  border: none;
+  background: #6327FE;
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+}
+
+/* .main .left .originalCola, .greenCola {
+  width: 88px;
+  height: 102px;
+  margin-right: 12px;
+  padding: 11px 0px;
+  border: 3px solid #6327FE;
+  border-radius: 10px;
+} */
+
+.main .left .originalCola,
+.violetCola,
+.yellowCola,
+.coolCola,
+.greenCola,
+.orangeCola {
+  width: 94px;
+  height: 108px;
+  padding: 11px 0px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+}
+
+.main .left .originalCola,
+.violetCola,
+.coolCola,
+.greenCola {
+  margin-right: 12px;
+}
+
+.main .left .yellowCola,
+.orangeCola {
+  margin-bottom: 12px;
+}
+
+.main .left .balance {
+  display: inline-block;
+  width: 190px;
+  height: 12px;
+  margin: 0 12px 12px 0;
+  padding: 10px 6px;
+  background-color: #EAE8FE;
+  border-radius: 5px;
+}
+
+.main .left .return,
+.deposit {
+  width: 94px;
+  height: 32px;
+  margin-bottom: 12px;
+  vertical-align: top;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.main .left .enterDeposit {
+  display: inline-block;
+  width: 188px;
+  height: 12px;
+  margin: 0 12px 12px 0;
+  padding: 10px 6px;
+  vertical-align: top;
+  border: none;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+
+.main .left .selectCola {
+  display: inline-block;
+  width: 176px;
+  height: 82px;
+  margin-right: 12px;
+  padding: 12px;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+  border: 1px solid #BDBDBD;
+  background-color: #EAE8FE;
+  border-radius: 5px;
+}
+
+.main .left .selectCola .selectOne {
+  width: 170px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main .left .get {
+  width: 94px;
+  height: 106px;
+  vertical-align: top;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  background: #6327FE;
+  color: white;
+}
+
+/* 오른쪽 */
+.main .right {
+  float: right;
+  height: 545px;
+}
+
+.main .right .money {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  height: 50px;
+  padding: 9px 0px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.main .right .money p {
+  width: 286px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 6px 10px;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: #EAE8FE;
+  vertical-align: middle;
+}
+
+.main .right .getList {
+  width: 306px;
+  height: 424px;
+  padding: 25px 27px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.main .right .getList .getListText {
+  margin-bottom: 13px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.main .right .getList .total {
+  margin-top: 6px;
+  text-align: right;
+}
+
+.main .right .getList .getColaList {
+  margin: 0 auto;
+  /* width: 306px; */
+  height: 364px;
+  padding: 12px;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background-color: #EAE8FE;
+}
