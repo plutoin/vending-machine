@@ -1,0 +1,272 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+/* COMMON */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #EAE8FE;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.main {
+  display: flex;
+  width: 753px;
+  /* height: 545px; */
+  margin: 0 auto;
+  /* background-color: skyblue; */
+}
+
+.colaName {
+  font-size: 9px;
+}
+
+.countItem {
+  width: 30px;
+  height: 30px;
+  padding: 6px 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* LEFT SIDE */
+.machine {
+  float: left;
+  width: 360px;
+  height: 545px;
+  margin-right: 28px;
+  padding: 31px 20px 28px;
+  background-color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.machine .item {
+  display: flex;
+  height: 270px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 20px;
+}
+
+.item .btn {
+  width: 94px;
+  height: 130px;
+  padding: 11px 0px;
+  border: none;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.item .colaName {
+  margin: 4px 0;
+}
+
+.item .price {
+  width: 70px;
+  height: 22px;
+  margin: 0 auto;
+  background: #6327FE;
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+}
+
+/* .main .machine .originalCola, .greenCola {
+  width: 88px;
+  margin-right: 12px;
+  padding: 11px 0px;
+  border: 3px solid #6327FE;
+  border-radius: 10px;
+} */
+
+.balance-container {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.balance-container .balance {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 33px;
+  padding: 6px 10px;
+  background-color: #EAE8FE;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.balance-container .return,
+.deposit {
+  width: 94px;
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.deposit-container {
+  margin-bottom: 10px;
+}
+
+.deposit-container, .display-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit-container .enterDeposit {
+  width: 200px;
+  height: 33px;
+  padding: 10px 6px;
+  vertical-align: top;
+  border: none;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.display-container .selectCola {
+  width: 200px;
+  height: 106px;
+  padding: 12px;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+  border: 1px solid #BDBDBD;
+  background-color: #EAE8FE;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.display-container .selectOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  height: 46px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.display-container .get {
+  width: 94px;
+  height: 106px;
+  vertical-align: top;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  background: #6327FE;
+  color: white;
+}
+
+/* RIGHT SIDE */
+.stuff {
+  float: right;
+  height: 545px;
+}
+
+.money-container {
+  display: flex;
+  margin: 0 auto;
+  width: 360px;
+  height: 50px;
+  padding: 9px 0px;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.money-container .money {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 306px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 6px 10px;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: #EAE8FE;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.money .unit {
+  font-weight: 700;
+}
+
+.getList {
+  width: 306px;
+  height: 424px;
+  padding: 25px 27px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.getList .getListText {
+  margin-bottom: 13px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.getList .total {
+  margin-top: 6px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.getList .getColaList {
+  margin: 0 auto;
+  /* width: 306px; */
+  height: 364px;
+  padding: 12px;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background-color: #EAE8FE;
+}
+
+.getList .selectOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  margin: 0 auto;
+  width: 276px;
+  height: 46px;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.selectOne img {
+  margin-right: 10px;
+}
+
+.selectOne p {
+  margin-right: 135px;
+}
