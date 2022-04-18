@@ -79,6 +79,7 @@ header img {
   width: 70px;
   height: 22px;
   margin: 0 auto;
+  line-height: 1.7;
   background: #6327FE;
   border-radius: 50px;
   color: white;
@@ -112,8 +113,8 @@ header img {
   box-sizing: border-box;
 }
 
-.balance-container .return,
-.deposit {
+.balance-container .returnBtn,
+.depositBtn {
   width: 94px;
   height: 32px;
   border: none;
@@ -133,7 +134,7 @@ header img {
   justify-content: space-between;
 }
 
-.deposit-container .enterDeposit {
+.deposit-container #deposit {
   width: 200px;
   height: 33px;
   padding: 10px 6px;
@@ -168,7 +169,7 @@ header img {
   background-color: white;
 }
 
-.display-container .get {
+.display-container .getBtn {
   width: 94px;
   height: 106px;
   vertical-align: top;
@@ -252,7 +253,6 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: space-around;
   margin: 0 auto;
   width: 276px;
   height: 46px;
@@ -267,6 +267,6 @@ header img {
   margin-right: 10px;
 }
 
-.selectOne p {
+.getColaList .selectOne .colaName {
   margin-right: 135px;
 }
