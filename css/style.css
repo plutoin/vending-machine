@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./media.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 /* COMMON */
@@ -19,10 +20,15 @@ header img {
 
 .main {
   display: flex;
-  width: 753px;
+  width: 100%;
+  justify-content: center;
   /* height: 545px; */
   margin: 0 auto;
   /* background-color: skyblue; */
+}
+
+.hidden {
+  display: none;
 }
 
 .colaName {
@@ -39,13 +45,21 @@ header img {
   font-size: 14px;
 }
 
+/* SCROLL */
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {}
+
 /* LEFT SIDE */
 .machine {
   float: left;
-  width: 360px;
-  height: 545px;
+  width: 360px; 
+  /* height: 545px; */
   margin-right: 28px;
-  padding: 31px 20px 28px;
+  padding: 30px 25px 27px;
   background-color: white;
   border: 2px solid white;
   box-sizing: border-box;
@@ -53,14 +67,18 @@ header img {
 
 .machine .item {
   display: flex;
-  height: 270px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 12px;
+  /* justify-content: space-between; */
   align-content: space-between;
   margin-bottom: 20px;
 }
 
 .item .btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
   width: 94px;
   height: 130px;
   padding: 11px 0px;
@@ -69,6 +87,7 @@ header img {
   filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
   border-radius: 10px;
   box-sizing: border-box;
+  font-size: 9px;
 }
 
 .item .colaName {
@@ -77,27 +96,20 @@ header img {
 
 .item .price {
   width: 70px;
-  height: 22px;
+  padding: 5px 0;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 12px;
   background: #6327FE;
   border-radius: 50px;
   color: white;
   font-size: 12px;
+  box-sizing: border-box;
 }
-
-/* .main .machine .originalCola, .greenCola {
-  width: 88px;
-  margin-right: 12px;
-  padding: 11px 0px;
-  border: 3px solid #6327FE;
-  border-radius: 10px;
-} */
 
 .balance-container {
   display: flex;
   margin-bottom: 10px;
-  justify-content: space-between;
+  gap: 12px;
 }
 
 .balance-container .balance {
@@ -129,9 +141,10 @@ header img {
   margin-bottom: 10px;
 }
 
-.deposit-container, .display-container {
+.deposit-container,
+.display-container {
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
 }
 
 .deposit-container #deposit {
@@ -146,11 +159,14 @@ header img {
 }
 
 .display-container .selectCola {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
   width: 200px;
   height: 106px;
   padding: 12px;
-  /* overflow: scroll;
-  overflow-x: hidden; */
+  overflow: auto;
+  overflow-x: hidden;
   border: 1px solid #BDBDBD;
   background-color: #EAE8FE;
   border-radius: 5px;
@@ -190,7 +206,6 @@ header img {
   display: flex;
   margin: 0 auto;
   width: 360px;
-  height: 50px;
   padding: 9px 0px;
   background-color: white;
   box-sizing: border-box;
@@ -241,8 +256,8 @@ header img {
   /* width: 306px; */
   height: 364px;
   padding: 12px;
-  /* overflow: scroll;
-  overflow-x: hidden; */
+  overflow: scroll;
+  overflow-x: hidden;
   box-sizing: border-box;
   border: 1px solid #BDBDBD;
   border-radius: 5px;
@@ -269,4 +284,35 @@ header img {
 
 .getColaList .selectOne .colaName {
   margin-right: 135px;
+}
+
+/* SCROLL */
+.display-container .selectCola::-webkit-scrollbar{
+  width: 6px;
+}
+
+.display-container .selectCola::-webkit-scrollbar-thumb{
+  height: 17%;
+  background-color: white;
+  /* 스크롤바 둥글게 설정 */
+  border-radius: 10px;    
+}
+
+.display-container .selectCola::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.getList .getColaList::-webkit-scrollbar{
+  width: 6px;
+}
+
+.getList .getColaList::-webkit-scrollbar-thumb{
+  height: 17%;
+  background-color: white;
+  /* 스크롤바 둥글게 설정 */
+  border-radius: 10px;    
+}
+
+.getList .getColaList::-webkit-scrollbar-track{
+  background-color: transparent;
 }

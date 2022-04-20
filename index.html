@@ -14,42 +14,44 @@
     <img src="./images/logo.png" alt="">
   </header>
 
-  <section class="main">
+  <main class="main">
     <section class="machine">
+      <h2 class="hidden">자판기</h2>
       <section class="item">
         <button class="btn originalCola">
           <img src="./images/original_cola.png" alt="">
-          <p class="colaName">Original_Cola</p>
-          <p class="price">1000원</p>
+          Original_Cola
+          <strong class="price">1000원</strong>
         </button>
         <button class="btn violetCola">
           <img src="./images/violet_cola.png" alt="">
-          <p class="colaName">Violet_Cola</p>
-          <p class="price">1000원</p>
+          Violet_Cola
+          <strong class="price">1000원</strong>
         </button>
         <button class="btn yellowCola">
           <img src="./images/yellow_cola.png" alt="">
-          <p class="colaName">Yellow_Cola</p>
-          <p class="price">1000원</p>
+          Yellow_Cola
+          <strong class="price">1000원</strong>
         </button>
         <button class="btn coolCola">
           <img src="./images/cool_cola.png" alt="">
-          <p class="colaName">Cool_Cola</p>
-          <p class="price">1000원</p>
+          Cool_Cola
+          <strong class="price">1000원</strong>
         </button>
         <button class="btn greenCola">
           <img src="./images/green_cola.png" alt="">
-          <p class="colaName">Green_Cola</p>
-          <p class="price">1000원</p>
+          Green_Cola
+          <strong class="price">1000원</strong>
         </button>
         <button class="btn orangeCola">
           <img src="./images/orange_cola.png" alt="">
-          <p class="colaName">Orange_Cola</p>
-          <p class="price">1000원</p>
+          Orange_Cola
+          <strong class="price">1000원</strong>
         </button>
       </section>
 
       <section class="balance-container">
+        <h2 class="hidden">잔액</h2>
         <section class="balance">
           <p>잔액 : </p>
           <p>원</p>
@@ -58,16 +60,23 @@
       </section>
 
       <section class="deposit-container">
+        <h2 class="hidden">입금</h2>
         <input type="number" min="0" id="deposit" placeholder="입금액 입력">
         <button class="depositBtn">입금</button>
       </section>
 
       <section class="display-container">
+        <h2 class="hidden">누른 목록</h2>
         <section class="selectCola">
           <section class="selectOne">
-            <img src="./images/original_cola_s.png" alt="">
+            <img src="./images/original_cola_s.png" alt="콜라콜라">
             <p class="colaName">Original_Cola</p>
-            <p class="countItem">1</p>
+            <data class="countItem" value="1">1</data>
+          </section>
+          <section class="selectOne">
+            <img src="./images/green_cola_s.png" alt="">
+            <p class="colaName">Green_Cola</p>
+            <data class="countItem" value="1">1</data>
           </section>
         </section>
         <button class="getBtn">획득</button>
@@ -79,39 +88,40 @@
 
       <section class="money-container">
         <section class="money">
+        <h2 class="hidden">소지금</h2>
           <p>소지금 :</p>
           <p class="unit">원</p>
         </section>
       </section>
 
       <section class="getList">
-        <p class="getListText">획득한 음료</p>
+        <h3 class="getListText">획득한 음료</h3>
         <section class="getColaList">
           <section class="selectOne">
             <img src="./images/original_cola_s.png" alt="">
             <p class="colaName">Original_Cola</p>
-            <p class="countItem">1</p>
+            <data class="countItem" value="1">1</data>
           </section>
           <section class="selectOne">
             <img src="./images/green_cola_s.png" alt="">
             <p class="colaName">Green_Cola</p>
-            <p class="countItem">2</p>
+            <data class="countItem" value="1">2</data>
           </section>
           <section class="selectOne">
             <img src="./images/orange_cola_s.png" alt="">
             <p class="colaName">Orange_Cola</p>
-            <p class="countItem">1</p>
+            <data class="countItem" value="1">1</data>
           </section>
           <section class="selectOne">
             <img src="./images/violet_cola_s.png" alt="">
             <p class="colaName">Violet_Cola</p>
-            <p class="countItem">5</p>
+            <data class="countItem" value="1">5</data>
           </section>
         </section>
         <p class="total">총금액: 9000원</p>
       </section>
     </section>
-  </section>
+  </main>
 </body>
 
 </html>
